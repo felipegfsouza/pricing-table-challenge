@@ -1,0 +1,173 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #ffcc29;
+  --blue: #1d539e;
+  --gray: #828799;
+  --page-background: #f9fbfc;
+}
+
+body {
+  background-color: var(--page-background);
+}
+
+header {
+  background: var(--blue);
+  width: 100%;
+  height: 450px;
+}
+
+header h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+}
+
+header p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #fff;
+  width: 550px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+/* cards */
+
+.cards-group {
+  display: flex;
+
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  transform: translateY(-120px);
+  width: 355px;
+  border-radius: 8px; /* add*/
+
+  background: #fff;
+  box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card:nth-child(2) {
+  padding: 0px 0px 30px 0px;
+  transform: translateY(-130px);
+}
+
+.card:nth-child(2) .sign-btn {
+  margin: auto 30px 0px;
+  background-color: var(--blue);
+  color: #fff;
+}
+/* plan */
+.plan-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #1e2338;
+}
+
+.plan-title-popular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #1d539e;
+}
+
+.plan-price {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: var(--gray);
+}
+
+.plan-content {
+  padding: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.currency-first {
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: #1e2338;
+}
+
+.decimal {
+  font-weight: 700;
+  color: #1e2338;
+}
+
+.description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--gray);
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.benefits {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--gray);
+}
+
+.benefits::before {
+  content: url(./assets/check.svg);
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.sign-btn {
+  padding: 12px 24px;
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  background-color: #fff;
+  color: var(--blue);
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-top: auto;
+  cursor: pointer;
+}
+
+.popular-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--yellow);
+  padding: 25px 30px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.nbutton {
+  padding: 8px 24px;
+  background-color: var(--blue);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #fff;
+  border-radius: 40px;
+}
+
+/* responsividade */
